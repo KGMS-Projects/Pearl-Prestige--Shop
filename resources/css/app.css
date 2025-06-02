@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom luxury styling */
+@layer components {
+    .btn-luxury {
+        @apply bg-luxury-brown text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300;
+    }
+    
+    .btn-outline-luxury {
+        @apply border-2 border-luxury-brown text-luxury-brown px-6 py-3 rounded-lg font-semibold hover:bg-luxury-brown hover:text-white transition-all duration-300;
+    }
+    
+    .card-luxury {
+        @apply bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300;
+    }
+    
+    .text-luxury-price {
+        @apply text-2xl font-bold text-luxury-black;
+    }
+}
+
+/* Custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
